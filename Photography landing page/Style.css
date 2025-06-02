@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  .achievements {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .achievements h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .achievements p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  /* Hamburger */
+  .hamburger {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    z-index: 1000;
+    color: #333;
+    background:none;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 100px;
+  }
+  
+  .sidebar a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .sidebar a:hover {
+    color: #4ac1ff;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  /* Sidebar Active Class */
+  .sidebar.active {
+    width: 220px;
+  }
+  
+  /* Main Content */
+  .main {
+    padding-top: 20px;
+  }
+  
+  /* Header */
+  header {
+    background: url('IMG-20250602-WA0017.jpg') center/cover no-repeat;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 6px #000;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .about {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.03);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #ccc;
+  }
+  
+  a {
+    color: #4ac1ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      font-size: 24px;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1.2rem;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  
